@@ -355,7 +355,7 @@ footer {
 /* TurfBook Ground Listings Grid */
 .ground-list {
     display: grid !important;
-    grid-template-columns:  1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 20px;
     padding: 20px;
     width: 100%;
@@ -377,6 +377,11 @@ footer {
 }
 
 /* Mobile */
+@media screen and (max-width: 600px) {
+    .ground-list {
+        grid-template-columns: 1fr;
+    }
+}
 @media screen and (max-width: 600px) {
     .ground-list {
         grid-template-columns: 1fr;
