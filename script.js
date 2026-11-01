@@ -52,3 +52,5 @@ function searchGrounds() {
     }
 
 }
+document.getElementById("districtFilter")
+    .addEventListener("change", searchGrounds);
