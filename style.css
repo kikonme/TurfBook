@@ -65,3 +65,82 @@ footer {
     text-align: center;
     padding: 20px;
 }
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.hero {
+    padding: 40px 10px;
+}
+
+.search-section {
+    padding: 25px 15px;
+    background: #e5f1e8;
+    margin-bottom: 35px;
+}
+
+.search-section input {
+    width: 90%;
+    max-width: 400px;
+    padding: 13px;
+    margin: 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 16px;
+}
+
+#grounds {
+    padding: 20px;
+}
+
+#grounds h2 {
+    margin-bottom: 25px;
+}
+
+.ground-card {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+}
+
+.ground-image {
+    background: #dcefe1;
+    padding: 35px;
+    font-size: 45px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.ground-card h3 {
+    color: #123d27;
+    margin-bottom: 12px;
+}
+
+.ground-card p {
+    margin: 10px 0;
+}
+
+.demo-label {
+    color: #a15c00;
+    font-size: 13px;
+}
+
+.ground-card button:disabled {
+    background: #777;
+    cursor: not-allowed;
+}
+
+#about {
+    padding: 35px 20px;
+    background: #e5f1e8;
+}
