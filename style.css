@@ -144,3 +144,102 @@ nav a {
     padding: 35px 20px;
     background: #e5f1e8;
 }
+
+/* Professional TurfBook design */
+
+body {
+    background: #f5f7f5;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #092b1b;
+    padding: 25px 15px;
+}
+
+header h1 {
+    font-size: 36px;
+    letter-spacing: 1px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    font-weight: bold;
+}
+
+.hero {
+    background: linear-gradient(135deg, #123d27, #168344);
+    color: white;
+    padding: 65px 20px;
+    border-radius: 12px;
+    margin: 20px;
+}
+
+.hero h2 {
+    color: white;
+    font-size: 30px;
+}
+
+.hero p {
+    margin-top: 15px;
+}
+
+.search-section {
+    border-radius: 12px;
+    margin: 25px 15px;
+}
+
+.search-section h2 {
+    color: #123d27;
+}
+
+.search-section button {
+    margin-left: 5px;
+}
+
+.ground-card {
+    border: 1px solid #e5e5e5;
+    transition: 0.3s;
+}
+
+.ground-card:hover {
+    transform: translateY(-4px);
+}
+
+.ground-image {
+    background: #d7eadc;
+    min-height: 110px;
+}
+
+#about {
+    border-radius: 12px;
+    margin: 20px;
+}
+
+footer {
+    margin-top: 30px;
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    .search-section input {
+        width: 100%;
+    }
+
+    .search-section button {
+        margin-top: 10px;
+    }
+}
