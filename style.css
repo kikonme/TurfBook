@@ -108,9 +108,10 @@ body {
 }
 
 .ground-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
+    display: block;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     text-align: left;
 }
 
