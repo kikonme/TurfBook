@@ -51,12 +51,10 @@ body {
     padding: 80px 7%;
     display: flex;
     align-items: center;
-    background:
-        linear-gradient(90deg, #092f22 15%, #092f22dd 55%, #092f2280),
-        linear-gradient(135deg, #176b45, #071e17);
+    background: linear-gradient(135deg, #176b45, #092f22, #071e17);
     color: white;
+    width: 100%;
 }
-
 .hero-content {
     max-width: 650px;
 }
