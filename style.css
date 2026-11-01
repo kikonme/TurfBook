@@ -387,3 +387,14 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+/* Location badge */
+.location-badge {
+    display: inline-block;
+    background: #e6f4ec;
+    color: #075c38 !important;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 8px 0;
+}
