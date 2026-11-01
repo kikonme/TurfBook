@@ -138,13 +138,14 @@ body {
 
 .demo-label {
     display: inline-block;
-    color: #8a5a00;
-    background: #fff1cc;
-    padding: 5px 9px;
-    border-radius: 5px;
+    color: #805500;
+    background: #fff3d6;
+    padding: 6px 12px;
+    border-radius: 20px;
     font-size: 11px;
-    font-weight: bold;
-    margin-bottom: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 14px;
 }
 
 .ground-info h3 {
