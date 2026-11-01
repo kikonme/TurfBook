@@ -1,9 +1,10 @@
-
 function searchGrounds() {
 
     let input = document.getElementById("searchInput");
+    let district = document.getElementById("districtFilter");
 
     let searchText = input.value.toLowerCase().trim();
+    let selectedDistrict = district.value.toLowerCase();
 
     let cards = document.querySelectorAll(".ground-card");
 
@@ -13,7 +14,11 @@ function searchGrounds() {
 
         let groundInfo = card.innerText.toLowerCase();
 
-        if (groundInfo.includes(searchText)) {
+        let matchesSearch = groundInfo.includes(searchText);
+        let matchesDistrict = selectedDistrict === "" ||
+                              groundInfo.includes(selectedDistrict);
+
+        if (matchesSearch && matchesDistrict) {
 
             card.style.display = "block";
             found++;
@@ -31,18 +36,12 @@ function searchGrounds() {
     if (!message) {
 
         message = document.createElement("p");
-
         message.id = "searchMessage";
-
         input.parentElement.appendChild(message);
 
     }
 
-    if (searchText === "") {
-
-        message.innerText = "Showing all demo grounds.";
-
-    } else if (found > 0) {
+    if (found > 0) {
 
         message.innerText = found + " ground(s) found.";
 
