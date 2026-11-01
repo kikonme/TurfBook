@@ -3,94 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TurfBook - Find. Book. Play.</title>
+    <title>TurfBook | Find. Book. Play.</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>⚽ TurfBook</h1>
-        <p>Find. Book. Play.</p>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#grounds">Grounds</a>
-            <a href="#about">About</a>
-        </nav>
-    </header>
+<header class="navbar">
+    <h2>⚽ TurfBook</h2>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#grounds">Grounds</a>
+        <a href="#about">About</a>
+    </nav>
+</header>
 
-    <main id="home">
+<section class="hero" id="home">
+    <div class="hero-content">
+        <p class="tagline">YOUR GAME STARTS HERE</p>
+        <h1>Find Your Perfect<br>Football Ground</h1>
+        <p>Discover football grounds across Nagaland.</p>
 
-        <section class="hero">
-            <h2>Find Your Perfect Football Ground</h2>
-            <p>
-                Discover and book football grounds
-                across Nagaland from anywhere.
-            </p>
-        </section>
+        <div class="search-box">
+            <input type="text" id="searchInput"
+                placeholder="Search by town or district...">
+            <button onclick="searchGrounds()">Search</button>
+        </div>
+    </div>
+</section>
 
-        <section class="search-section">
-            <h2>Find a Ground</h2>
+<section class="grounds" id="grounds">
+    <p class="section-tag">EXPLORE NAGALAND</p>
+    <h2>Find a Ground Near You</h2>
+    <p class="section-description">
+        Explore demo listings while we prepare verified ground information.
+    </p>
 
-            <input
-                type="text"
-                id="searchInput"
-                placeholder="Search town or district..."
-            >
+    <div class="ground-container">
 
-            <button onclick="searchGrounds()">
-                Search
-            </button>
-        </section>
-
-        <section id="grounds">
-            <h2>Explore Football Grounds</h2>
-
-            <div class="ground-card">
-                <div class="ground-image">⚽</div>
-                <h3>Demo Football Ground 1</h3>
-                <p>Location: Dimapur</p>
-                <p>Price: Example ₹800/hour</p>
-                <p class="demo-label">Demo listing – not available for booking</p>
-                <button disabled>Booking coming soon</button>
+        <div class="ground-card">
+            <div class="ground-icon">⚽</div>
+            <div class="ground-info">
+                <span class="demo-label">DEMO LISTING</span>
+                <h3>Football Ground 1</h3>
+                <p>📍 Dimapur</p>
+                <p>Example price: ₹800/hour</p>
+                <p class="unavailable">Not available for booking</p>
+                <button disabled>Coming Soon</button>
             </div>
+        </div>
 
-            <div class="ground-card">
-                <div class="ground-image">⚽</div>
-                <h3>Demo Football Ground 2</h3>
-                <p>Location: Kohima</p>
-                <p>Price: Example ₹1,000/hour</p>
-                <p class="demo-label">Demo listing – not available for booking</p>
-                <button disabled>Booking coming soon</button>
+        <div class="ground-card">
+            <div class="ground-icon">⚽</div>
+            <div class="ground-info">
+                <span class="demo-label">DEMO LISTING</span>
+                <h3>Football Ground 2</h3>
+                <p>📍 Kohima</p>
+                <p>Example price: ₹1,000/hour</p>
+                <p class="unavailable">Not available for booking</p>
+                <button disabled>Coming Soon</button>
             </div>
+        </div>
 
-            <div class="ground-card">
-                <div class="ground-image">⚽</div>
-                <h3>Demo Football Ground 3</h3>
-                <p>Location: Mokokchung</p>
-                <p>Price: Example ₹700/hour</p>
-                <p class="demo-label">Demo listing – not available for booking</p>
-                <button disabled>Booking coming soon</button>
+        <div class="ground-card">
+            <div class="ground-icon">⚽</div>
+            <div class="ground-info">
+                <span class="demo-label">DEMO LISTING</span>
+                <h3>Football Ground 3</h3>
+                <p>📍 Mokokchung</p>
+                <p>Example price: ₹700/hour</p>
+                <p class="unavailable">Not available for booking</p>
+                <button disabled>Coming Soon</button>
             </div>
+        </div>
 
-        </section>
+    </div>
+</section>
 
-        <section id="about">
-            <h2>About TurfBook</h2>
-            <p>
-                TurfBook aims to make football ground
-                booking easier for players and teams
-                throughout Nagaland.
-            </p>
-        </section>
+<section class="about" id="about">
+    <h2>About TurfBook</h2>
+    <p>
+        TurfBook aims to make finding football grounds across Nagaland
+        easier. Our goal is to connect players, teams and ground owners
+        through one simple platform.
+    </p>
+    <h3>Find. Book. Play.</h3>
+</section>
 
-    </main>
+<footer>
+    <p>© 2026 TurfBook | Made for football lovers in Nagaland ⚽</p>
+</footer>
 
-    <footer>
-        <p>© 2026 TurfBook. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
-
+<script src="script.js"></script>
 </body>
 </html>
 
+    
