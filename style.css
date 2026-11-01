@@ -351,5 +351,17 @@ footer {
         padding: 18px;
     }
 }
+/* TurfBook Ground Listings Grid */
+.ground-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
 
+.ground-list .ground-card {
+    width: auto;
+    margin: 0;
+    min-width: 0;
+}
     
